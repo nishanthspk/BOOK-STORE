@@ -4,6 +4,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import {Link } from "react-router-dom"
 
+
 const Home = () => {
 
   return (
@@ -21,7 +22,7 @@ const Home = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <img src="" alt="" />
+    
     </div>
   );
 };
