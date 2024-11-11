@@ -21,6 +21,7 @@ const Home = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <img src="" alt="" />
     </div>
   );
 };
