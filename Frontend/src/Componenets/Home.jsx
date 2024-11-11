@@ -7,6 +7,7 @@ import {Link } from "react-router-dom"
 const Home = () => {
 
   return (
+  <div>
     <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue"}}>
       <Container>
         <Navbar.Brand ><Link to='/' style={{color:'white',textDecoration:"none"}}>BookStore</Link></Navbar.Brand>
@@ -20,6 +21,7 @@ const Home = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 };
 

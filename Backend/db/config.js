@@ -13,11 +13,11 @@
 
 // // mongodb://localhost:27017 
 
-
+//mongodb://127.0.0.1:27017/BookStore
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/BookStore', {
+mongoose.connect('mongodb+srv://spknishanth2004:BBy9XjzfaKWrilyV@book-store.kxig7.mongodb.net/?retryWrites=true&w=majority&appName=book-store', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 });
