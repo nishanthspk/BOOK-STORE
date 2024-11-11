@@ -1,0 +1,85 @@
+/* App-wide styles */
+body {
+    font-family: Arial, sans-serif;
+   /* background-color:rgba(212, 206, 137, 0.811); */
+   /* background-color:rgb(248,249,250); */
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Car List styles */
+  .car-list {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Car Container styles */
+  .car-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Car Card styles */
+  .car-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .car-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #pop{
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  #pop:hover{
+   
+    transform: scale(1.08);
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .car-container {
+      flex-direction: column;
+    }
+  
+    .car-card {
+      width: 100%;
+    }
+  }
+  .input-container {
+    position: relative;
+    
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input:focus + label, input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 5px;
+    background: white;
+    padding: 0 5px;
+  }
+
+  label {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    /* padding: 0 10px; */
+    pointer-events: none;
+    transition: 0.2s;
+  }
