@@ -7,7 +7,6 @@ import BG from "../Assets/Bookbg.jpg";
 
 const Home = () => {
  
-
   return (
     <div className='' style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh', width: '100vw' }}>
     
