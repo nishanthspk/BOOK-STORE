@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Home from '../Componenets/Home';
 
+
 const Alogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -35,7 +36,7 @@ const Alogin = () => {
   };
 
   return (
-    <div>
+    <div >
       <Home/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100">  
       <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
