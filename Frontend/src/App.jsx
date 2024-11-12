@@ -31,7 +31,7 @@ import BG from './Assets/Bookbg.jpg';
 
 function App() {
   return (
-      <div className='className="bg-cover bg-center h-screen"' style={{ backgroundImage: "url('C:\Users\nisha\Desktop\BOOK STORE\Frontend\src\Assets\Bookbg.jpg')"}}>
+      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('C:\Users\nisha\Desktop\BOOK STORE\Frontend\src\Assets\Bookbg.jpg')"}}>
       
        <BrowserRouter>
        <Routes>
