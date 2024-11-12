@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Home from '../Componenets/Home';
+
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <div >
      
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">  
+    <div className="flex items-center justify-center min-h-screen bg-gray-100" style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh', width: '100vw' }}>  
       <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
         {/* Front side of the card */}
      
