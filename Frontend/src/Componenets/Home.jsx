@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='' style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh', width: '100vw' }}>
     
-    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"brown" , height: '10vh'}}>
+    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blueviolet" , height: '10vh'}}>
       <Container>
         <Navbar.Brand className="fs-1"><Link to='/' style={{color:'white',textDecoration:"none"}}>BookStore</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
