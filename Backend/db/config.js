@@ -15,9 +15,13 @@
 
 //mongodb://127.0.0.1:27017/BookStore
 
-const mongoose = require('mongoose');
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const app = express();
 
-mongoose.connect('mongodb+srv://spknishanth2004:BBy9XjzfaKWrilyV@book-store.kxig7.mongodb.net/?retryWrites=true&w=majority&appName=book-store', {
+app.use(cors());
+mongoose.connect('mongodb+srv://spknishanth2004:BBy9XjzfaKWrilyV@book-store.kxig7.mongodb.net/book-store', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 });

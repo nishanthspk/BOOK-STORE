@@ -25,11 +25,14 @@ import Vendors from './Admin/Seller';
 import Seller from './Admin/Seller';
 import Wishlist from './User/Wishlist';
 // import './App.css'
+import BG from './Assets/Bookbg.jpg';
+
+
 
 function App() {
   return (
-      <div>
-       
+      <div className='className="bg-cover bg-center h-screen"' style={{ backgroundImage: "url('C:\Users\nisha\Desktop\BOOK STORE\Frontend\src\Assets\Bookbg.jpg')"}}>
+      
        <BrowserRouter>
        <Routes>
        <Route path='/' element={<Home/>} />
