@@ -37,7 +37,7 @@ const Slogin = () => {
 
   return (
     <div >
-      <Home/>
+    
     
     <div className="flex items-center justify-center min-h-screen bg-gray-100">  
       <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
