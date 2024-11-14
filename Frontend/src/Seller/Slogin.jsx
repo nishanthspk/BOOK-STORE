@@ -39,7 +39,7 @@ const Slogin = () => {
     <div >
     
     
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">  
+    <div className="flex items-center justify-center min-h-screen bg-gray-500">  
       <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
         {/* Front side of the card */}
      
