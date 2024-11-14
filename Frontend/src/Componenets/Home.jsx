@@ -16,9 +16,9 @@ const Home = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto fs-2">
-            <Link to="/login" style={{padding:"px",color:"white",textDecoration:"none",paddingTop:"30px",backgroundColor: ''}}>User</Link>
-            <Link to="/slogin" style={{padding:"10px",color:"white",textDecoration:"none",paddingTop:"30px"}}>Seller</Link>
-            <Link to="/alogin" style={{padding:"10px",color:"white",textDecoration:"none",paddingTop:"30px"}}>Admin</Link>   
+            <Link to="/login" className="rounded-2xl text-black bg-light" style={{padding:"6px",color:"white",textDecoration:"none",marginTop:"30px",marginRight:"10px",backgroundColor: 'darkgreen'}}>User</Link>
+            <Link to="/slogin"  className="rounded-2xl text-black bg-light" style={{padding:"6px",color:"white",textDecoration:"none",marginTop:"30px",marginRight:"10px",backgroundColor: 'orangered'}}>Seller</Link>
+            <Link to="/alogin"  className="rounded-2xl text-black bg-light" style={{padding:"6px",color:"white",textDecoration:"none",marginTop:"30px",backgroundColor: 'orangered'}}>Admin</Link>   
           </Nav>
         </Navbar.Collapse>
       </Container>
