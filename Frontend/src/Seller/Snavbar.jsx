@@ -9,16 +9,16 @@ const Snavbar = () => {
   return (
     <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue"}}>
       <Container>
-        <Navbar.Brand ><Link to='/shome' style={{color:"white",textDecoration:"none"}}>BookStore(Seller)</Link></Navbar.Brand>
+        <Navbar.Brand ><Link to='/shome' className='fs-2' style={{color:"white",textDecoration:"none"}}>BookStore(Seller)</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto" >
-            <Link to="/shome" style={{padding:"10px",color:"white",textDecoration:"none"}}>Home</Link>
-            <Link to="/myproducts" style={{padding:"10px",color:"white",textDecoration:"none"}}>Myproducts</Link>
-            <Link to="/addbook" style={{padding:"10px",color:"white",textDecoration:"none"}}>Add Books</Link>
-            <Link to="/orders" style={{padding:"10px",color:"white",textDecoration:"none"}}>Orders</Link>
-            <Link to="/" style={{paddingLeft:"10px",paddingTop:"10px",color:"white",textDecoration:"none"}}>Logout</Link>
-            <h4 style={{color:"white",paddingTop:"0px"}}>({JSON.parse(get).name} )</h4>
+            <Link to="/shome" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Home</Link>
+            <Link to="/myproducts" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Myproducts</Link>
+            <Link to="/addbook" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Add Books</Link>
+            <Link to="/orders" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Orders</Link>
+            <Link to="/" className='fs-4' style={{paddingLeft:"10px",paddingTop:"10px",color:"white",textDecoration:"none"}}>Logout</Link>
+            <h4 style={{color:"white",paddingTop:"14px",paddingLeft:"8px"}}>({JSON.parse(get).name} )</h4>
             
           </Nav>
         </Navbar.Collapse>
