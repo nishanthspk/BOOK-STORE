@@ -9,15 +9,15 @@ const Anavbar = () => {
   return (
     <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue"}}>
       <Container>
-        <Navbar.Brand><Link to='/shome' style={{color:"white",textDecoration:"none"}}>BookStore(Admin)</Link></Navbar.Brand>
+        <Navbar.Brand><Link to='/shome' className='fs-2' style={{color:"white",textDecoration:"none"}}>BookStore(Admin)</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto" >
-            <Link to="/ahome" style={{padding:"10px",color:"white",textDecoration:"none"}}>Home</Link>
-            <Link to="/users" style={{padding:"10px",color:"white",textDecoration:"none"}}>Users</Link>
-            <Link to="/sellers" style={{padding:"10px",color:"white",textDecoration:"none"}}>Sellers</Link>
-            <Link to="/" style={{padding:"10px",color:"white",textDecoration:"none"}}>Logout</Link>
-            <h4 style={{color:"white",paddingTop:"0px"}}>({JSON.parse(get).name} )</h4>
+            <Link to="/ahome" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Home</Link>
+            <Link to="/users" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Users</Link>
+            <Link to="/sellers" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Sellers</Link>
+            <Link to="/" className='fs-4' style={{padding:"10px",color:"white",textDecoration:"none"}}>Logout</Link>
+            <h4 style={{color:"white",paddingTop:"14px"}}>({JSON.parse(get).name} )</h4>
             
           </Nav>
         </Navbar.Collapse>
