@@ -38,7 +38,7 @@ const Login = () => {
     <div >
      
     <div className="flex items-center justify-center min-h-screen bg-gray-500" >  
-      <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
+      <div className="relative max-w-md w-full bg-gray-300 p-8 rounded-md shadow-md overflow-hidden">
         {/* Front side of the card */}
      
       
