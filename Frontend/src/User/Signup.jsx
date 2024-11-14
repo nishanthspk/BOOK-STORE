@@ -38,8 +38,6 @@ const Signup = () => {
 
       {/* <div className=" h-5  w-full  bg-indigo-500 transform skew-y-6 origin  "></div> */}
         <div className="text-center mb-4">
-        
-          
          
           <h2 className="text-3xl font-extrabold text-gray-900">Signup</h2>
           
