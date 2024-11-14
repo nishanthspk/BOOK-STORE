@@ -32,7 +32,7 @@ const Asignup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-blue-300">
       <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden relative">
    
 
