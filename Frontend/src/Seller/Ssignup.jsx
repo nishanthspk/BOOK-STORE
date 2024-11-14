@@ -33,7 +33,7 @@ const Ssignup = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden relative">
+      <div className="max-w-md w-full bg-blue-100 p-8 rounded-md shadow-md overflow-hidden relative">
    
 
       
