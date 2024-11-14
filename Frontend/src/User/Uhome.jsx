@@ -16,7 +16,7 @@ const Uhome = () => {
     <div>
       <Unavbar/>
       
-      <div style>
+      <div style={{backgroundColor:"#81b5fa"}}>
       <h1 className='text-center' style={{fontSize:"50px"}}>Best Seller</h1>
       <div  style={{display:"flex",justifyContent:"center"}}>
   {/* <hr style={{ height: "px", width:"250px",color:"black", backgroundColor:"black"}} /> */}
