@@ -72,10 +72,10 @@ const deleteData = (taskId) => {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"#81b5fa",paddingBottom:"500px"}}>
     <Anavbar/>
     <br />
-    <h1 className='text-center'>Users</h1> <br />
+    <h1 className='text-center pt-48'>Users</h1> <br />
     <div style={{display:"flex",justifyContent:"center"}}>
     <Table striped bordered hover variant="dark" style={{width:"70%"}}>
       <thead>

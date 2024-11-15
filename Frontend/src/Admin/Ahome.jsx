@@ -158,7 +158,7 @@ function Ahome() {
     <div className=''style={{backgroundColor:"#81b5fa",paddingBottom:"210px"}} >
         <Anavbar/>
       <h3 className="text-center pt-20" style={{color:""}}>DashBoard</h3>
-      <Card body style={{ background: "white", width: "80%", marginLeft: "10%", marginTop: "20px", height: "580px" }}>
+      <Card body style={{ background: "wheat", width: "80%", marginLeft: "10%", marginTop: "20px", height: "580px" }}>
         <div className="flex justify-around items-center p-4">
            <Link to="/users" style={{textDecoration:"none"}}>
           <div className="w-64 h-32 bg-red-500 rounded-lg shadow-md flex flex-col justify-center items-center text-xl font-bold text-gray-800 text-center">
