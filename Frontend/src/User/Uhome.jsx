@@ -16,8 +16,8 @@ const Uhome = () => {
     <div>
       <Unavbar/>
       
-      <div style={{backgroundColor:"#81b5fa"}}>
-      <h1 className='text-center' style={{fontSize:"50px"}}>Best Seller</h1>
+      <div style={{backgroundColor:"#81b5fa",paddingBottom:"100px"}}>
+      <h1 className='text-center pt-20 pb-10' style={{fontSize:"50px"}}>Best Seller</h1>
       <div  style={{display:"flex",justifyContent:"center"}}>
   {/* <hr style={{ height: "px", width:"250px",color:"black", backgroundColor:"black"}} /> */}
   <br/>
@@ -66,7 +66,7 @@ const Uhome = () => {
   <br/>
   <br/>
   <div>
-      <h1 className='text-center' style={{fontSize:"50px"}}>Top Recomendation</h1>
+      <h1 className='text-center pt-20 pb-10' style={{fontSize:"50px"}}>Top Recomendation</h1>
       <div  style={{display:"flex",justifyContent:"center"}}>
   {/* <hr style={{ height: "px", width:"250px",color:"black", backgroundColor:"black"}} /> */}
   <br/>
@@ -112,7 +112,7 @@ const Uhome = () => {
 </div>
 </div>
       </div>
-      <br/>
+      
      <Footer/>
           </div>
   )
