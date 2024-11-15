@@ -252,10 +252,10 @@ function Myorders() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"#81b5fa"}}>
       <Unavbar />
       <div>
-        <h1 className='text-center'>My Orders</h1>
+        <h1 className='text-center pt-10'>My Orders</h1>
         <div>
           {cars.map((item) => {
             const status = calculateStatus(item.Delivery);
@@ -324,7 +324,9 @@ function Myorders() {
       <br/>
       <br/>
       <br/>
+      <div className='pt-96 ' >
       <Footer/>
+      </div>
     </div>
   );
 }

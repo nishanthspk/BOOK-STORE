@@ -103,7 +103,7 @@ function Products() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"#81b5fa",paddingBottom:"230px"}}>
       <Unavbar />
       <div className="container mx-auto p-8">
         <h2 className="text-3xl font-semibold mb-4 text-center">Books List</h2>

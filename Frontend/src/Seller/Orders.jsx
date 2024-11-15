@@ -47,7 +47,7 @@ function Orders() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"#81b5fa",paddingBottom:"460px"}}>
       <Snavbar/>
       <br/>
       <div>

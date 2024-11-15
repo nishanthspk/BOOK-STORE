@@ -155,9 +155,9 @@ function Ahome() {
     { name: 'Orders', value: totalOrders, fill: 'orange' }, 
   ];
   return (
-    <div>
+    <div className='' >
         <Anavbar/>
-      <h3 className="text-center" style={{color:""}}>DashBoard</h3>
+      <h3 className="text-center pt-20" style={{color:""}}>DashBoard</h3>
       <Card body style={{ background: "white", width: "80%", marginLeft: "10%", marginTop: "20px", height: "580px" }}>
         <div className="flex justify-around items-center p-4">
            <Link to="/users" style={{textDecoration:"none"}}>

@@ -277,7 +277,7 @@ function OrderItem() {
   };
 
   return (
-    <div style={{ backgroundColor: '' }}>
+    <div style={{ backgroundColor: "#81b5fa",paddingBottom:"90px" }}>
       <Unavbar />
        <div style={{ display: 'flex ' }} >
          <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg bg-white">
