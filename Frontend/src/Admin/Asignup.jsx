@@ -43,7 +43,7 @@ const Asignup = () => {
         
           
          
-          <h2 className="text-3xl font-extrabold text-gray-900">Seller Registration</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900">Admin Registration</h2>
           
         </div>
 

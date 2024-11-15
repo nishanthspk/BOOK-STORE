@@ -38,8 +38,8 @@ const Alogin = () => {
   return (
     <div >
     
-    <div className="flex items-center justify-center min-h-screen bg-gray-500">  
-      <div className="relative max-w-md w-full bg-white p-8 rounded-md shadow-md overflow-hidden">
+    <div className="flex items-center justify-center min-h-screen bg-blue-300">  
+      <div className="relative max-w-md w-full bg-blue-100 p-8 rounded-md shadow-md overflow-hidden">
         {/* Front side of the card */}
      
       
