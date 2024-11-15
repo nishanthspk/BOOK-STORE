@@ -7,7 +7,8 @@ import {Link } from "react-router-dom"
 const Snavbar = () => {
   const get=localStorage.getItem('user')
   return (
-    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue"}}>
+  <div style={{backgroundColor:"#81B5FA",paddingTop:"20px"}}>
+    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue",marginLeft:"20px",marginRight:"20px"}} className="rounded-3xl" >
       <Container>
         <Navbar.Brand ><Link to='/shome' className='fs-2' style={{color:"white",textDecoration:"none"}}>BookStore(Seller)</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -24,6 +25,7 @@ const Snavbar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 };
 

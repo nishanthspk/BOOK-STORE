@@ -30,7 +30,7 @@ function Myproducts() {
     alert('Item is deleted');
   })
   return (
-    <div>
+    <div >
       
    <Snavbar/>
     <div className="container mx-auto p-8">

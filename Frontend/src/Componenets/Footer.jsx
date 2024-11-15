@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div >
         <footer style={{ backgroundColor: 'black', padding: '20px', textAlign: 'center' }}>
         <div style={{display:"flex",justifyContent:"center"}}>
         <button id='bt' className='item-center' style={{height:"50px"}} >Contact us</button>

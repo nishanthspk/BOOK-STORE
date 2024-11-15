@@ -57,11 +57,11 @@ function Shome() {
     { name: 'Orders', value: totalOrders, fill: 'orange' }, 
   ];
   return (
-    <div>
+    <div style={{backgroundColor:"#81b5fa"}}>
         <Snavbar/>
         <br/>
       <h3 className="text-3xl font-semibold mb-4 text-center" >DashBoard</h3>
-      <Card body style={{ backgroundColor: "wheat", width: "80%", marginLeft: "10%", marginTop: "20px", height: "580px" }}>
+      <Card body style={{ backgroundColor: "wheat", width: "80%", marginLeft: "10%", marginTop: "50px", height: "580px" }}>
         <div className="flex justify-around items-center p-4">
           
          <Link to="/myproducts" style={{textDecoration:"none"}}>
