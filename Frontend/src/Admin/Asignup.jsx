@@ -15,7 +15,7 @@ const Asignup = () => {
 
     axios
       .post("http://localhost:4000/asignup", payload)
-      .then((result) =>{
+      .then((result) => {
         alert('Account created')
         console.log(result)
         navigate('/alogin')
@@ -34,15 +34,15 @@ const Asignup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-blue-300">
       <div className="max-w-md w-full bg-blue-100 p-8 rounded-md shadow-md overflow-hidden relative">
-   
 
-      
 
-      {/* <div className=" h-5  w-full  bg-indigo-500 transform skew-y-6 origin  "></div> */}
+
+
+        {/* <div className=" h-5  w-full  bg-indigo-500 transform skew-y-6 origin  "></div> */}
         <div className="text-center mb-4">
-                
+
           <h2 className="text-3xl font-extrabold text-gray-900">Admin Registration</h2>
-          
+
         </div>
 
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -112,7 +112,7 @@ const Asignup = () => {
         </form>
 
         <div className="absolute h-full w-full bg-indigo-500 transform -skew-y-6 origin-bottom-right"></div>
-       
+
       </div>
     </div>
   );
