@@ -42,29 +42,29 @@
 //     try {
 //       // Update formData with user input
 //       const updatedFormData = { ...formData };
-      
-      
+
+
 //       const selectedItem = item[0]; // Assuming you're using the first item in the array
 //       const seller=selectedItem.userName;
 //       const description=selectedItem.description; 
 //       const price = selectedItem.price;
 
 //       const totalAmount = price /100 *5  + +price; // Calculate the total amount
-  
-     
+
+
 //       updatedFormData.totalamount = totalAmount;
 //       updatedFormData.userName=seller
 //       updatedFormData.description=description
 
-  
-      
-  
+
+
+
 //       // Now you can post the updatedFormData
 //       const userId = JSON.parse(localStorage.getItem('user')).id;
 //       const userName = JSON.parse(localStorage.getItem('user')).name;
 //       updatedFormData.userId=userId
 //       updatedFormData.userName=userName
-      
+
 //       await axios.post('http://localhost:8000/userorder', updatedFormData);
 //       console.log(updatedFormData);
 //       alert('ordered successfully');
@@ -73,7 +73,7 @@
 //       console.error('Error adding bike insurance: ', error);
 //     }
 //   };
-  
+
 
 //   return (
 //     <div  style={{backgroundColor:"",}}>
@@ -85,7 +85,7 @@
 //           {/* <p>item name:{item.itemtype}</p> */}
 //           <form onSubmit={handleSubmit}>
 //           <label className="block text-gray-600" style={{paddingBottom:"5px"}}>Address:</label>
-        
+
 //   <div >
 //     <div class="input-container">
 //       <input type="text" id="myInput"  class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "style={{width:"340px"}} 
@@ -167,14 +167,14 @@
 //                     </div>
 //                     {/* <h1 className='text-center'> {item.itemtype}-{item._id.slice(3, 7)}</h1> */}
 //                     {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}> */}
-                      
+
 //                         <div style={{ display:'flex',justifyContent:"space-between" }}>
 //                             <p style={{ fontSize: "20px" }}>Price:</p>
 //                             <p>{item.price}</p>
-                       
+
 //                         {/* </div> */}
 //                     </div>
-                    
+
 //                 </div>
 
 
@@ -192,8 +192,8 @@
 //         </div>
 //       </div> 
 //       <div> 
-        
-        
+
+
 //       </div>
 //     </div>
 //   );
@@ -215,7 +215,7 @@ function OrderItem() {
     pincode: '',
     state: '',
   });
-  const fee= 99;
+  const fee = 99;
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -239,12 +239,12 @@ function OrderItem() {
 
     try {
       // Ensure item is available and contains the required properties
-      if (!item || !item.userName || !item.userId || !item.description || !item.price || !item.title || !item.author || !item.genre|| !item.itemImage) {
+      if (!item || !item.userName || !item.userId || !item.description || !item.price || !item.title || !item.author || !item.genre || !item.itemImage) {
         throw new Error('Item data is missing required properties');
       }
 
-      const { userName, description, price,title,author,genre,itemImage,userId } = item;
-     
+      const { userName, description, price, title, author, genre, itemImage, userId } = item;
+
       const totalAmount = parseInt(price, 10) + 99;
 
       // Add the item properties to the formData
@@ -252,12 +252,12 @@ function OrderItem() {
         ...formData,
         totalamount: totalAmount,
         seller: userName,
-        sellerId:userId,
+        sellerId: userId,
         description: description,
-        booktitel:title,
-        bookauthor:author,
-        bookgenre:genre,
-        itemImage:itemImage,
+        booktitel: title,
+        bookauthor: author,
+        bookgenre: genre,
+        itemImage: itemImage,
       };
 
       // You can add user-specific data here
@@ -277,92 +277,92 @@ function OrderItem() {
   };
 
   return (
-    <div style={{ backgroundColor: "#81b5fa",paddingBottom:"90px" }}>
+    <div style={{ backgroundColor: "#81b5fa", paddingBottom: "90px" }}>
       <Unavbar />
-       <div style={{ display: 'flex ' }} >
-         <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg bg-white">
-           <h2 className="text-2xl font-semibold" >Your order is almost Done! </h2>
-           {/* <p>item name:{item.itemtype}</p> */}
-           <form onSubmit={handleSubmit}>
-        
-   <div >
-   <label className="block text-gray-600 text-center" style={{paddingTop:"10px"}}>Address:</label>
-     <div class="input-container">
-   
-       <input type="text" id="myInput"  class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "style={{width:"340px"}} 
-      name="flatno"
-      value={formData.flatno}
-      onChange={handleChange}
-     />
-      <label for="myInput"  class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
-        Flat no
-      </label>
-    </div>
-  </div><br/>
- <div style={{display:"flex",justifyContent:"space-between"}}>
- <div >
-    <div class="input-container">
-      <input type="text" id="myInput"  class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "
-      style={{width:"140px"}} 
-     name="city"
-      value={formData.city}
-      onChange={handleChange}
-     />
-      <label for="myInput"  class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
-        City
-      </label>
-    </div>
-  </div> 
-  <div >
-    <div class="input-container">
-      <input type="text" id="myInput"  class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "
-      style={{width:"140px"}} 
-      name="pincode"
-      value={formData.pincode}
-      onChange={handleChange}
-     />
-      <label for="myInput"  class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
-        Pincode
-      </label>
-    </div>
-  </div>
- </div>
-  <br/>
-  <div >
-    <div class="input-container">
-      <input type="text" id="myInput"  class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "style={{width:"340px"}} 
-      name="state"
-      value={formData.state}
-      onChange={handleChange}
-     />
-      <label for="myInput"  class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
-        State
-      </label>
-    </div>
-  </div> <br/>
-             {item && (
-                <div>
-                  <div style={{ display: "flex", justifyContent: "flex-end", height: "100%",width:"100%" }} >
-                  <div style={{ height: "100px",width:"50px" }} >
-                        <img src={`http://localhost:4000/${item?.itemImage}`} alt={`${item.itemtype} Image`} />
-                        {/* <p className='text-end'>{item.itemtype}-{item._id.slice(3, 7)}</p> */}
-                        <p className='text-end'>{item.itemtype}-{item._id ? item._id.slice(3, 7) : ''}</p>
-                    </div>
-                  </div>
-                  
-                    <div style={{ display:'flex',justifyContent:"space-between" }}>
-                            <p style={{ fontSize: "17px" }}>Price:</p>
-                            <p>{item.price}</p>
-                    </div>  
-                        <div style={{ display:'flex',justifyContent:"space-between" }}>
-                            <p style={{ fontSize: "17px" }}>Delivery:</p>
-                            <p>Free</p>
-                        </div>
-                        <div style={{ display:'flex',justifyContent:"space-between" }}>
-                            <p style={{ fontSize: "17px" }}>Total Amount:</p>
-                            <p> {parseInt(item.price, 10) +15}</p>
-                        </div>
+      <div style={{ display: 'flex ' }} >
+        <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg bg-white">
+          <h2 className="text-2xl font-semibold" >Your order is almost Done! </h2>
+          {/* <p>item name:{item.itemtype}</p> */}
+          <form onSubmit={handleSubmit}>
+
+            <div >
+              <label className="block text-gray-600 text-center" style={{ paddingTop: "10px" }}>Address:</label>
+              <div class="input-container">
+
+                <input type="text" id="myInput" class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" " style={{ width: "340px" }}
+                  name="flatno"
+                  value={formData.flatno}
+                  onChange={handleChange}
+                />
+                <label for="myInput" class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
+                  Flat no
+                </label>
+              </div>
+            </div><br />
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div >
+                <div class="input-container">
+                  <input type="text" id="myInput" class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "
+                    style={{ width: "140px" }}
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
+                  />
+                  <label for="myInput" class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
+                    City
+                  </label>
                 </div>
+              </div>
+              <div >
+                <div class="input-container">
+                  <input type="text" id="myInput" class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" "
+                    style={{ width: "140px" }}
+                    name="pincode"
+                    value={formData.pincode}
+                    onChange={handleChange}
+                  />
+                  <label for="myInput" class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
+                    Pincode
+                  </label>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div >
+              <div class="input-container">
+                <input type="text" id="myInput" class="w-48 p-2 border border-gray-300 rounded focus:outline-none" placeholder=" " style={{ width: "340px" }}
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
+                />
+                <label for="myInput" class="absolute left-2 transform -translate-y-1/2 bg-white px-1 pointer-events-none transition-transform">
+                  State
+                </label>
+              </div>
+            </div> <br />
+            {item && (
+              <div>
+                <div style={{ display: "flex", justifyContent: "flex-end", height: "100%", width: "100%" }} >
+                  <div style={{ height: "100px", width: "50px" }} >
+                    <img src={`http://localhost:4000/${item?.itemImage}`} alt={`${item.itemtype} Image`} />
+                    {/* <p className='text-end'>{item.itemtype}-{item._id.slice(3, 7)}</p> */}
+                    <p className='text-end'>{item.itemtype}-{item._id ? item._id.slice(3, 7) : ''}</p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', justifyContent: "space-between" }}>
+                  <p style={{ fontSize: "17px" }}>Price:</p>
+                  <p>{item.price}</p>
+                </div>
+                <div style={{ display: 'flex', justifyContent: "space-between" }}>
+                  <p style={{ fontSize: "17px" }}>Delivery:</p>
+                  <p>Free</p>
+                </div>
+                <div style={{ display: 'flex', justifyContent: "space-between" }}>
+                  <p style={{ fontSize: "17px" }}>Total Amount:</p>
+                  <p> {parseInt(item.price, 10) + 15}</p>
+                </div>
+              </div>
             )}
             <button
               type="submit"
@@ -373,7 +373,7 @@ function OrderItem() {
             </button>
           </form>
         </div>
-      </div>         
+      </div>
     </div>
   );
 }
