@@ -24,34 +24,34 @@ const Book = () => {
 
   return (
     <div>
-        <Vnavbar/>
-      <br/>
+      <Vnavbar />
+      <br />
       {item && (
         <div>
-            <div style={{display:"flex",justifyContent:"center",height:"450px"}} >
-            <img src={`http://localhost:4000/${item?.itemImage}`} alt={`${item.itemtype} Image`}  />
-                </div>
-                <h1 className='text-center'> {item.itemtype}-{item._id.slice(3,7)}</h1>
-                <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-  <div style={{ width: '38%',marginLeft:"150px" }}>
-    <h2 style={{color:"grey"}}><strong>Description</strong></h2>
-    <hr style={{height:"3px",backgroundColor:"black"}}/>
-    <p style={{fontSize:"20px"}}>{item.description}</p>
-  </div>
-  <div style={{ marginRight: '300px' }}>
-    <h2 style={{color:"grey"}}><strong>Info</strong></h2>
-    
-    <hr style={{height:"3px",backgroundColor:"black"}}/>
-    <p style={{fontSize:"20px"}}>Price:  {item.price}</p>
-    <p style={{fontSize:"20px"}}>Warranty:  1 year</p>
-    <p style={{fontSize:"20px"}}>Seller:  {item.userName}</p>
-  </div>
-</div>
+          <div style={{ display: "flex", justifyContent: "center", height: "450px" }} >
+            <img src={`http://localhost:4000/${item?.itemImage}`} alt={`${item.itemtype} Image`} />
+          </div>
+          <h1 className='text-center'> {item.itemtype}-{item._id.slice(3, 7)}</h1>
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <div style={{ width: '38%', marginLeft: "150px" }}>
+              <h2 style={{ color: "grey" }}><strong>Description</strong></h2>
+              <hr style={{ height: "3px", backgroundColor: "black" }} />
+              <p style={{ fontSize: "20px" }}>{item.description}</p>
+            </div>
+            <div style={{ marginRight: '300px' }}>
+              <h2 style={{ color: "grey" }}><strong>Info</strong></h2>
 
-                
+              <hr style={{ height: "3px", backgroundColor: "black" }} />
+              <p style={{ fontSize: "20px" }}>Price:  {item.price}</p>
+              <p style={{ fontSize: "20px" }}>Warranty:  1 year</p>
+              <p style={{ fontSize: "20px" }}>Seller:  {item.userName}</p>
+            </div>
+          </div>
+
+
         </div>
       )}
-      
+
     </div>
   );
 };
